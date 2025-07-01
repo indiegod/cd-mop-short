@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Opportunities in the Web Hosting Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 384px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #0062E3, #418FFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .flow-arrow {
+            content: '►';
+            position: absolute;
+            right: -2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #89B9FF;
+        }
+        .citation-link {
+            text-decoration: underline;
+            text-decoration-color: #93c5fd; /* blue-300 */
+            color: #2563eb; /* blue-600 */
+            transition: color 0.2s;
+        }
+        .citation-link:hover {
+            color: #1d4ed8; /* blue-700 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <ul class="flex justify-center space-x-4 md:space-x-8 text-sm md:text-base font-medium text-slate-600">
+                <li><a href="#market-chasm" class="hover:text-blue-600 transition-colors">Market Chasm</a></li>
+                <li><a href="#competitors" class="hover:text-blue-600 transition-colors">Competitors</a></li>
+                <li><a href="#gaps" class="hover:text-blue-600 transition-colors">Market Gaps</a></li>
+                <li><a href="#performance" class="hover:text-blue-600 transition-colors">Performance Potential</a></li>
+                <li><a href="#blueprint" class="hover:text-blue-600 transition-colors">The Blueprint</a></li>
+                <li><a href="#sources" class="hover:text-blue-600 transition-colors">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <section id="market-chasm" class="text-center py-16">
+            <h1 class="text-4xl md:text-6xl font-black text-slate-800 mb-4">The Hosting Market Chasm</h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-600 mb-12">The web hosting industry is defined by a deep divide between brand promises of value and the reality of customer experience. This creates significant vulnerabilities for incumbents and massive opportunities for disruptors.</p>
+            
+            <div class="bg-white rounded-lg shadow-xl p-6 md:p-8 max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Case Study: Crazy Domains' Reputation Deficit</h2>
+                <p class="text-slate-600 mb-6">A prime example of this chasm is Crazy Domains, where an aggressive "unbeatable value" marketing message is severely undermined by overwhelmingly negative public perception, creating a critical trust deficit.<sup>[<a href="#source-8" class="citation-link">8</a>, <a href="#source-36" class="citation-link">36</a>]</sup></p>
+                <div class="chart-container h-80">
+                    <canvas id="customerSentimentChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitors" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold gradient-text">Sizing Up the Competition</h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mt-4">Success in this market is no longer about just offering domains and hosting. It's about building a sophisticated ecosystem for high-value B2B clients and providing a seamless, AI-enhanced user experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Competitor B2B Maturity Ranking</h3>
+                    <p class="text-slate-600 mb-6">Market leaders like GoDaddy have heavily invested in platforms for agencies and developers,<sup>[<a href="#source-2" class="citation-link">2</a>, <a href="#source-47" class="citation-link">47</a>]</sup> while Crazy Domains remains critically underdeveloped, relying on a basic affiliate program.<sup>[<a href="#source-45" class="citation-link">45</a>]</sup></p>
+                    <div class="chart-container h-96">
+                        <canvas id="b2bMaturityChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+                     <h3 class="text-xl font-bold text-slate-800 mb-4">Strategic Capability Comparison</h3>
+                    <p class="text-slate-600 mb-6">A comparison across key strategic pillars reveals how far incumbents have fallen behind in critical areas like AI integration, B2B features, and overall customer trust.</p>
+                    <div class="chart-container h-96">
+                        <canvas id="competitorRadarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gaps" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold gradient-text">Three Untapped Market Gaps</h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mt-4">Our analysis identifies three strategic voids in the market. Each represents a significant opportunity to build new, defensible revenue streams by solving core customer problems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col">
+                    <div class="text-5xl font-black text-blue-200 mb-4">01</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">The Agency Workflow Gap</h3>
+                    <p class="text-slate-600 flex-grow mb-6">Web professionals are a high-value segment, yet are underserved. They need sophisticated tools to manage their clients efficiently—a feature set where most providers, especially Crazy Domains, are non-existent.</p>
+                    <div class="chart-container h-80">
+                         <canvas id="agencyFeatureGapChart"></canvas>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col">
+                    <div class="text-5xl font-black text-blue-200 mb-4">02</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">The Transparent Value Gap</h3>
+                    <p class="text-slate-600 flex-grow mb-6">Customer fatigue with the "low intro, high renewal" pricing model is at an all-time high.<sup>[<a href="#source-7" class="citation-link">7</a>, <a href="#source-8" class="citation-link">8</a>]</sup> A provider who breaks this mold with fair, transparent pricing can capture a massive, disillusioned market.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="pricingModelChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col">
+                    <div class="text-5xl font-black text-blue-200 mb-4">03</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">The Effective AaaS Gap</h3>
+                    <p class="text-slate-600 flex-grow mb-6">SMBs are tired of paying for ineffective, automated "marketing tools."<sup>[<a href="#source-32" class="citation-link">32</a>, <a href="#source-46" class="citation-link">46</a>]</sup> The opportunity lies in providing AI-powered assistants that deliver measurable ROI, not just empty clicks.</p>
+                     <div class="space-y-4 mt-auto">
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-red-800">Old Model: Low-Value Automation</h4>
+                            <p class="text-sm text-red-700">Selling useless tools like "Traffic Booster" which erode customer trust.<sup>[<a href="#source-46" class="citation-link">46</a>]</sup></p>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-green-800">New Model: AI-Powered ROI</h4>
+                            <p class="text-sm text-green-700">Providing an AI assistant for content generation and performance analytics.<sup>[<a href="#source-10" class="citation-link">10</a>]</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="performance" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold gradient-text">Projected Market Performance of New Opportunities</h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mt-4">How will these opportunities perform? We project their potential impact based on market size, revenue potential, and ability to improve customer loyalty and retention.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Pro Platform for Agencies</h3>
+                    <p class="text-slate-600 mb-4 text-sm">High revenue per user and immense customer loyalty.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="proPlatformPotentialChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">AI-Powered AaaS</h3>
+                    <p class="text-slate-600 mb-4 text-sm">A powerful new vertical revenue stream that increases platform stickiness.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="aiAaasPotentialChart"></canvas>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Transparent Pricing</h3>
+                     <p class="text-slate-600 mb-4 text-sm">Massive potential for customer acquisition from competitors and reduced churn.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="transparentPricingPotentialChart"></canvas>
+                    </div>
+                </div>
+            </div>
+             <p class="text-center text-sm text-slate-500 mt-8">Bubble size represents potential ROI. X-axis represents addressable market size, and Y-axis represents strategic value (loyalty/stickiness).</p>
+        </section>
+
+        <section id="blueprint" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold gradient-text">The Blueprint: A Modern B2B Program</h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mt-4">A one-size-fits-all affiliate link is not a strategy. A modern B2B program must be a multi-tiered funnel that cultivates high-value partnerships and creates a powerful, loyal ecosystem.</p>
+            </div>
+            
+            <div class="relative flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 max-w-5xl mx-auto p-4">
+                <div class="relative bg-white rounded-lg shadow-xl p-6 w-full md:w-1/3 text-center">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white font-bold text-sm px-3 py-1 rounded-full">TIER 1</div>
+                    <h3 class="font-bold text-xl mt-4">Affiliate</h3>
+                    <p class="text-sm text-slate-600 mt-2">Acquire new customers via content creators and marketers with a simple, commission-based model.<sup>[<a href="#source-52" class="citation-link">52</a>]</sup></p>
+                    <div class="hidden md:block flow-arrow"></div>
+                </div>
+
+                <div class="relative bg-white rounded-lg shadow-xl p-6 w-full md:w-1/3 text-center">
+                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white font-bold text-sm px-3 py-1 rounded-full">TIER 2</div>
+                    <h3 class="font-bold text-xl mt-4">Reseller</h3>
+                    <p class="text-sm text-slate-600 mt-2">Enable partners to build their own brand with bulk discounts, API access, and full white-labeling capabilities.<sup>[<a href="#source-3" class="citation-link">3</a>, <a href="#source-57" class="citation-link">57</a>]</sup></p>
+                    <div class="hidden md:block flow-arrow"></div>
+                </div>
+
+                 <div class="relative bg-white rounded-lg shadow-xl p-6 w-full md:w-1/3 text-center">
+                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-800 text-white font-bold text-sm px-3 py-1 rounded-full">TIER 3</div>
+                    <h3 class="font-bold text-xl mt-4">Agency Partner</h3>
+                    <p class="text-sm text-slate-600 mt-2">An exclusive program built around the "Pro Platform" with workflow tools, lead referrals, and dedicated support.<sup>[<a href="#source-1" class="citation-link">1</a>, <a href="#source-74" class="citation-link">74</a>]</sup></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sources" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold gradient-text">Sources & Citations</h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mt-4">The data and insights presented in this infographic are synthesized from the comprehensive source report, which references the following publicly available information.</p>
+            </div>
+            <div id="sources-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center p-6 mt-16">
+        <p>&copy; 2025 Strategic Market Analysis. All rights reserved.</p>
+        <p class="text-xs mt-2">This infographic is a visual representation of data and concepts from the "Competitive Landscape and Strategic Opportunity Analysis" report. Visualizations are for illustrative purposes.</p>
+    </footer>
+
+    <script>
+        const brilliantBlues = {
+            dark: '#004AAD',
+            primary: '#0062E3',
+            light: '#418FFF',
+            lighter: '#89B9FF',
+            negative: '#ef4444', 
+            positive: '#22c55e',
+            neutral: '#64748b'
+        };
+
+        const chartTooltipOptions = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                },
+                legend: {
+                    position: 'bottom',
+                }
+            },
+            maintainAspectRatio: false,
+            responsive: true,
+        };
+
+        function wrapLabel(str, maxWidth = 16) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        }
+        
+        const appData = {
+            sources: [
+                { id: 1, title: "GoDaddy Agency Program", url: "https://www.godaddy.com/pro/agency" }, { id: 2, title: "GoDaddy Pro Overview", url: "https://www.godaddy.com/pro" },
+                { id: 3, title: "GoDaddy Reseller Program", url: "https://www.godaddy.com/reseller-hosting" }, { id: 4, title: "Hostinger Pricing Analysis", url: "https://www.hostinger.com/tutorials/hostinger-pricing" },
+                { id: 5, title: "Industry Pricing Models Study", url: "https://www.forbes.com/advisor/web-hosting/website-hosting-cost/" }, { id: 6, title: "Hosting Service Feature Comparison", url: "https://www.pcmag.com/picks/the-best-web-hosting-services" },
+                { id: 7, title: "SiteGround Customer Reviews", url: "https://www.trustpilot.com/review/www.siteground.com" }, { id: 8, title: "Trustpilot Hosting Reviews", url: "https://www.trustpilot.com/categories/web_hosting_service" },
+                { id: 9, title: "GoDaddy Investor Relations", url: "https://investors.godaddy.net/" }, { id: 10, title: "GoDaddy Airo™ Launch", url: "https://www.godaddy.com/airo" },
+                { id: 11, title: "GoDaddy Product Pages", url: "https://www.godaddy.com/hosting/web-hosting" }, { id: 12, title: "Wix Business Solutions", url: "https://www.wix.com/business-solutions" },
+                { id: 13, title: "Hostinger Affiliate Program", url: "https://www.hostinger.com/affiliates" }, { id: 14, title: "Hostinger Company Profile", url: "https://www.hostinger.com/about" },
+                { id: 15, title: "Namecheap Domain Privacy Policy", url: "https://www.namecheap.com/security/whoisguard/" }, { id: 16, title: "Namecheap Hosting Plans", url: "https://www.namecheap.com/hosting/" },
+                { id: 17, title: "Hosting Price Comparison", url: "https://www.websitebuilderexpert.com/web-hosting/cheapest-web-hosting/" }, { id: 18, title: "Wix Platform Limitations", url: "https://support.wix.com/en/article/transferring-your-wix-site-to-another-host" },
+                { id: 19, title: "Wix Target Audience Analysis", url: "https://www.wix.com/website/templates" }, { id: 20, title: "VentraIP Homepage", url: "https://ventraip.com.au/" },
+                { id: 21, title: "VentraIP 'About Us'", url: "https://ventraip.com.au/about-us/" }, { id: 22, title: "Crazy Domains Product Sitemap", url: "https://www.crazydomains.com.au/sitemap/" },
+                { id: 23, title: "GoDaddy Hosting Plans", url: "https://www.godaddy.com/hosting/web-hosting" }, { id: 24, title: "Hostinger Feature List", url: "https://www.hostinger.com/web-hosting" },
+                { id: 25, title: "WordPress.org Hosting Recommendations", url: "https://wordpress.org/hosting/" }, { id: 26, title: "VentraIP Hosting Plans", url: "https://ventraip.com.au/web-hosting/" },
+                { id: 27, title: "Crazy Domains Marketing Services", url: "https://www.crazydomains.com.au/online-marketing/" }, { id: 28, title: "Hostinger Hosting Plans", url: "https://www.hostinger.com/web-hosting" },
+                { id: 29, title: "Bluehost SEO Tools", url: "https://www.bluehost.com/solutions/seo-tools" }, { id: 30, title: "Hosting Security Features", url: "https://www.forbes.com/advisor/business/software/best-secure-hosting-providers/" },
+                { id: 31, title: "hPanel vs cPanel Review", url: "https://www.wpbeginner.com/hosting/cpanel-vs-hpanel/" }, { id: 32, title: "Crazy Domains Independent Review", url: "https://www.websitetooltester.com/en/reviews/crazy-domains-review/" },
+                { id: 33, title: "Dreamscape Networks Profile", url: "https://www.dreamscapenetworks.com/" }, { id: 34, title: "Crazy Domains Brand Guidelines", url: "https://www.crazydomains.com.au/about-us/brand-guidelines/" },
+                { id: 35, title: "Crazy Domains Corporate Info", url: "https://sg.linkedin.com/company/crazy-domains" }, { id: 36, title: "Crazy Domains Customer Reviews", url: "https://www.trustpilot.com/review/www.crazydomains.com.au" },
+                { id: 37, title: "Crazy Domains WHOIS Tool", url: "https://www.crazydomains.com.au/whois/" }, { id: 38, title: "Domain Tool Marketing", url: "https://www.crazydomains.com.au/domain-names/domain-extensions/" },
+                { id: 39, title: "Crazy Domains Domain Offers", url: "https://www.crazydomains.com.au/domain-names/" }, { id: 40, title: "Crazy Domains Web Hosting", url: "https://www.crazydomains.com.au/web-hosting/" },
+                { id: 41, title: "Crazy Domains Business Hosting", url: "https://www.crazydomains.com.au/web-hosting/business-hosting/" }, { id: 42, title: "Crazy Domains VPS Hosting", url: "https://www.crazydomains.com.au/vps-hosting/" },
+                { id: 43, title: "Crazy Domains Design Service", url: "https://www.crazydomains.com.au/website-design/" }, { id: 44, title: "Customer Churn Analysis", url: "https://www.forbes.com/sites/forbestechcouncil/2021/07/20/how-to-reduce-customer-churn-for-your-saas-business/" },
+                { id: 45, title: "Crazy Domains Affiliate Program", url: "https://www.crazydomains.com.au/affiliates/" }, { id: 46, title: "AaaS Effectiveness Study", url: "https://www.semrush.com/blog/seo-services/" },
+                { id: 47, title: "GoDaddy Pro Hub Features", url: "https://www.godaddy.com/pro/hub" }, { id: 48, title: "Hostinger NVMe Hosting", url: "https://www.hostinger.com/nvme-hosting" },
+                { id: 49, title: "Hosting Contract Length Analysis", url: "https://www.techradar.com/pro/web-hosting/the-hidden-costs-of-web-hosting" }, { id: 50, title: "Hostinger Data Center Locations", url: "https://www.hostinger.com/data-centers" },
+                { id: 51, title: "Hostinger hPanel Review", url: "https://www.wpbeginner.com/hosting/cpanel-vs-hpanel/" }, { id: 52, title: "Affiliate Program Commission Rates", url: "https://www.forbes.com/advisor/business/best-affiliate-programs/" },
+                { id: 53, title: "Hostinger Affiliate Terms", url: "https://www.hostinger.com/affiliate-agreement" }, { id: 54, title: "Hostinger Referral Program", url: "https://www.hostinger.com/refer-a-friend" },
+                { id: 55, title: "Hostinger Horizons Launch", url: "https://www.hostinger.com/horizons" }, { id: 56, title: "VentraIP User Price Report", url: "https://forums.whirlpool.net.au/archive/3vx1x1k3" },
+                { id: 57, title: "Namecheap Reseller Program", url: "https://www.namecheap.com/hosting/reseller/" }, { id: 58, title: "Namecheap API Documentation", url: "https://www.namecheap.com/support/api/intro/" },
+                { id: 59, title: "Bluehost vs SiteGround Performance", url: "https://www.wpbeginner.com/hosting/bluehost-vs-siteground/" }, { id: 60, title: "Beginner Hosting Reviews", url: "https://www.forbes.com/advisor/web-hosting/best-web-hosting-for-beginners/" },
+                { id: 61, title: "WordPress Hosting Speed Tests", url: "https://wpspeedmatters.com/fastest-wordpress-hosting/" }, { id: 62, title: "Bluehost Service Analysis", url: "https://www.pcmag.com/reviews/bluehost-web-hosting" },
+                { id: 63, title: "SiteGround Premium Hosting", url: "https://www.siteground.com/web-hosting.htm" }, { id: 64, title: "SiteGround Site Tools Review", url: "https://www.wpbeginner.com/hosting/siteground-cpanel-alternative-site-tools/" },
+                { id: 65, title: "SiteGround Pricing Strategy", url: "https://www.siteground.com/blog/new-hosting-plans-pricing/" }, { id: 66, title: "SiteGround White-Label Hosting", url: "https://www.siteground.com/tutorials/site-tools/white-label-hosting/" },
+                { id: 67, title: "Wix Premium Plans", url: "https://www.wix.com/premium-purchase-plan/connect-domain" }, { id: 68, title: "VentraIP Security Features", url: "https://ventraip.com.au/web-hosting/" },
+                { id: 69, title: "NameSilo Affiliate Program", url: "https://www.namesilo.com/affiliate" }, { id: 70, title: "WHMCS Integration Guide", url: "https://docs.whmcs.com/Enom" },
+                { id: 71, title: "InMotion Reseller Hosting", url: "https://www.inmotionhosting.com/reseller-hosting" }, { id: 72, title: "CentralNic Corporate Profile", url: "https://www.centralnic.com/" },
+                { id: 73, "title": "CentralNic Reseller Services", "url": "https://www.centralnicreseller.com/" }, { id: 74, "title": "10Web Agency Platform", "url": "https://10web.io/agency-platform/" },
+                { id: 75, "title": "10Web AI Website Builder", "url": "https://10web.io/ai-website-builder/" }, { id: 76, "title": "NameSilo White-Label Options", "url": "https://www.namesilo.com/Support/Reseller-Program" },
+                { id: 77, "title": "HostGator SEO Tools", "url": "https://www.hostgator.com/seo-tools" }, { id: 78, "title": "Webflow Analyze Feature", "url": "https://webflow.com/feature/analyze" },
+                { id: 79, "title": "Webflow Optimize Feature", "url": "https://webflow.com/feature/optimize" }, { id: 80, "title": "Framer Business Plans", "url": "https://www.framer.com/pricing/" }
+            ]
+        };
+
+        function populateSources() {
+            const grid = document.getElementById('sources-grid');
+            if(!grid) return;
+            appData.sources.forEach(source => {
+                const card = document.createElement('a');
+                card.id = `source-${source.id}`;
+                card.href = source.url;
+                card.target = "_blank";
+                card.rel = "noopener noreferrer";
+                card.className = "block p-4 bg-white rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-200 scroll-mt-24";
+                card.innerHTML = `<span class="font-bold text-blue-600">[${source.id}]</span><p class="text-sm text-slate-700 mt-1">${source.title}</p>`;
+                grid.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Chart(document.getElementById('customerSentimentChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Negative Reviews & Complaints', 'Positive Mentions'],
+                    datasets: [{
+                        label: 'Customer Sentiment',
+                        data: [92, 8],
+                        backgroundColor: [brilliantBlues.negative, brilliantBlues.positive],
+                        borderColor: '#ffffff',
+                        borderWidth: 4,
+                    }]
+                },
+                options: { ...chartTooltipOptions }
+            });
+
+            new Chart(document.getElementById('b2bMaturityChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['GoDaddy', 'Hostinger', 'SiteGround', 'Namecheap', 'Crazy Domains'].map(l => wrapLabel(l)),
+                    datasets: [{
+                        label: 'B2B Program Maturity Score',
+                        data: [95, 80, 75, 40, 10],
+                        backgroundColor: [
+                            brilliantBlues.dark,
+                            brilliantBlues.primary,
+                            brilliantBlues.light,
+                            brilliantBlues.lighter,
+                            brilliantBlues.negative
+                        ],
+                        borderColor: brilliantBlues.dark,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    ...chartTooltipOptions,
+                    indexAxis: 'y',
+                    plugins: { ...chartTooltipOptions.plugins, legend: { display: false } },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: { display: false }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('competitorRadarChart'), {
+                type: 'radar',
+                data: {
+                    labels: ['B2B Features', 'AI Integration', 'User Experience', 'Pricing Transparency', 'Customer Trust'],
+                    datasets: [
+                        {
+                            label: 'GoDaddy',
+                            data: [9, 8, 7, 4, 6],
+                            fill: true,
+                            backgroundColor: 'rgba(0, 74, 173, 0.2)',
+                            borderColor: brilliantBlues.dark,
+                            pointBackgroundColor: brilliantBlues.dark,
+                        },
+                        {
+                            label: 'Hostinger',
+                            data: [7, 6, 9, 7, 8],
+                            fill: true,
+                            backgroundColor: 'rgba(0, 98, 227, 0.2)',
+                            borderColor: brilliantBlues.primary,
+                            pointBackgroundColor: brilliantBlues.primary,
+                        },
+                        {
+                            label: 'Crazy Domains',
+                            data: [1, 2, 4, 2, 2],
+                            fill: true,
+                            backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                            borderColor: brilliantBlues.negative,
+                            pointBackgroundColor: brilliantBlues.negative,
+                        }
+                    ]
+                },
+                options: { 
+                    ...chartTooltipOptions,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e2e8f0' },
+                            grid: { color: '#e2e8f0' },
+                            pointLabels: { font: { size: 12 } },
+                            ticks: {
+                                backdropColor: 'rgba(248, 250, 252, 0.75)',
+                                stepSize: 2
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 10
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('agencyFeatureGapChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Client Dashboard', 'White-Labeling', 'Bulk Maintenance', 'Lead Generation'],
+                    datasets: [
+                        {
+                            label: 'GoDaddy Pro',
+                            data: [9, 7, 8, 6],
+                            backgroundColor: brilliantBlues.dark,
+                        },
+                        {
+                            label: 'Hostinger Pro',
+                            data: [7, 2, 6, 0],
+                            backgroundColor: brilliantBlues.primary,
+                        },
+                         {
+                            label: 'Crazy Domains',
+                            data: [1, 0, 0, 0],
+                            backgroundColor: brilliantBlues.negative,
+                        }
+                    ]
+                },
+                options: {
+                     ...chartTooltipOptions,
+                      scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10,
+                             title: { display: true, text: 'Feature Completeness (0-10)' }
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('pricingModelChart'), {
+                type: 'line',
+                data: {
+                    labels: ['Year 1', 'Year 2 (Renewal)', 'Year 3', 'Year 4'],
+                    datasets: [
+                        {
+                            label: 'Industry Standard (e.g., Crazy Domains)',
+                            data: [2.99, 14.99, 14.99, 14.99],
+                            borderColor: brilliantBlues.negative,
+                            backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                            fill: true,
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Transparent Value Model',
+                            data: [6.99, 8.99, 8.99, 8.99],
+                            borderColor: brilliantBlues.positive,
+                            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                            fill: true,
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: { 
+                    ...chartTooltipOptions,
+                     scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Monthly Price ($)' }
+                        }
+                    }
+                }
+            });
+            
+            const performanceChartOptions = {
+                ...chartTooltipOptions,
+                plugins: {
+                    ...chartTooltipOptions.plugins,
+                    legend: { display: false },
+                    tooltip: {
+                         callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.r !== null) {
+                                    label += `ROI Index: ${context.parsed.r}`;
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        min: 0,
+                        max: 10,
+                        title: { display: true, text: 'Market Size' }
+                    },
+                    y: {
+                        min: 0,
+                        max: 10,
+                        title: { display: true, text: 'Strategic Value' }
+                    }
+                }
+            };
+            
+            new Chart(document.getElementById('proPlatformPotentialChart'), {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Pro Platform',
+                        data: [{x: 6, y: 9, r: 25}],
+                        backgroundColor: brilliantBlues.primary + 'bf'
+                    }]
+                },
+                options: performanceChartOptions,
+            });
+
+            new Chart(document.getElementById('aiAaasPotentialChart'), {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'AI-Powered AaaS',
+                        data: [{x: 8, y: 7, r: 30}],
+                        backgroundColor: brilliantBlues.dark + 'bf'
+                    }]
+                },
+                options: performanceChartOptions,
+            });
+            
+            new Chart(document.getElementById('transparentPricingPotentialChart'), {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Transparent Pricing',
+                        data: [{x: 10, y: 6, r: 20}],
+                        backgroundColor: brilliantBlues.light + 'bf'
+                    }]
+                },
+                options: performanceChartOptions,
+            });
+
+            populateSources();
+        });
+    </script>
+</body>
+</html>
